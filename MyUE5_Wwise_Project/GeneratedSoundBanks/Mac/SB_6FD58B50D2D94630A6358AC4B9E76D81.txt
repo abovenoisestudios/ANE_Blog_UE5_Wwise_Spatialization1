@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3116762376	Play_3DSound			\Default Work Unit\Play_3DSound	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	248137148	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\3D Sound\Wwise Silence	
+

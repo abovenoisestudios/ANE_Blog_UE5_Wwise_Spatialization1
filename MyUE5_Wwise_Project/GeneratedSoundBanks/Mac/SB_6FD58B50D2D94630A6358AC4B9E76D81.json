@@ -1,0 +1,36 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/2022/9. Sep/ANE_Blog_UE5_Wwise_Spatialization1/MyUE5_Wwise_Project/",
+   "SourceFilesRoot": "/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/2022/9. Sep/ANE_Blog_UE5_Wwise_Spatialization1/MyUE5_Wwise_Project/.cache/Mac/",
+   "SoundBanksRoot": "/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/2022/9. Sep/ANE_Blog_UE5_Wwise_Spatialization1/MyUE5_Wwise_Project/GeneratedSoundBanks/Mac/",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/2022/9. Sep/ANE_Blog_UE5_Wwise_Spatialization1/MyUE5_Wwise_Project/GeneratedSoundBanks/Mac"
+  },
+  "SoundBanks": [
+   {
+    "Id": "223277736",
+    "GUID": "{0D4EF2A8-F2A8-12A8-A8A8-A8A8A8A8A8A8}",
+    "Language": "SFX",
+    "Hash": "75080180",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_6FD58B50D2D94630A6358AC4B9E76D81",
+    "ShortName": "SB_6FD58B50D2D94630A6358AC4B9E76D81",
+    "Path": "SB_6FD58B50D2D94630A6358AC4B9E76D81.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "3116762376",
+      "Name": "Play_3DSound",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_3DSound",
+      "GUID": "{6FD58B50-D2D9-4630-A635-8AC4B9E76D81}",
+      "MaxAttenuation": "1500.",
+      "DurationType": "Infinite"
+     }
+    ]
+   }
+  ]
+ }
+}

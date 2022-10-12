@@ -1,0 +1,36 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/2022/9. Sep/ANE_Blog_UE5_Wwise_Spatialization1/MyUE5_Wwise_Project/",
+   "SourceFilesRoot": "/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/2022/9. Sep/ANE_Blog_UE5_Wwise_Spatialization1/MyUE5_Wwise_Project/.cache/Mac/",
+   "SoundBanksRoot": "/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/2022/9. Sep/ANE_Blog_UE5_Wwise_Spatialization1/MyUE5_Wwise_Project/GeneratedSoundBanks/Mac/",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/2022/9. Sep/ANE_Blog_UE5_Wwise_Spatialization1/MyUE5_Wwise_Project/GeneratedSoundBanks/Mac"
+  },
+  "SoundBanks": [
+   {
+    "Id": "786733258",
+    "GUID": "{2EE498CA-98CA-18CA-CACA-CACACACACACA}",
+    "Language": "SFX",
+    "Hash": "385460031",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_4E33824A7C5E4EB6AA577EE620F69633",
+    "ShortName": "SB_4E33824A7C5E4EB6AA577EE620F69633",
+    "Path": "SB_4E33824A7C5E4EB6AA577EE620F69633.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "1502130998",
+      "Name": "Play_3DRotationSound",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_3DRotationSound",
+      "GUID": "{4E33824A-7C5E-4EB6-AA57-7EE620F69633}",
+      "MaxAttenuation": "1500.",
+      "DurationType": "Infinite"
+     }
+    ]
+   }
+  ]
+ }
+}

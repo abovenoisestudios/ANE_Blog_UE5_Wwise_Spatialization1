@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1502130998	Play_3DRotationSound			\Default Work Unit\Play_3DRotationSound	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	945108260	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\3D Rotation Sound\Wwise Silence	
+

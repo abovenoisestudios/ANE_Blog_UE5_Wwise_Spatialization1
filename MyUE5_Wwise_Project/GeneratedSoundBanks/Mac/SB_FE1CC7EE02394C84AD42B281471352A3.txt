@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1944596312	Play_3DMultiPositionSound			\Default Work Unit\Play_3DMultiPositionSound	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	484340021	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\3D MultiPosition Sound\Wwise Silence	
+

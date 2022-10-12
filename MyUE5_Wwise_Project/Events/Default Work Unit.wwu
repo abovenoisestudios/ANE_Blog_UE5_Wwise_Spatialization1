@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{CC0ADFF5-1E63-4CA6-BCD7-CCA2E16176C4}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{CC0ADFF5-1E63-4CA6-BCD7-CCA2E16176C4}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{CC0ADFF5-1E63-4CA6-BCD7-CCA2E16176C4}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_3DRotationSound" ID="{4E33824A-7C5E-4EB6-AA57-7EE620F69633}">
+					<ChildrenList>
+						<Action Name="" ID="{D9061F05-E986-4227-9D4C-95D718EEE4D4}" ShortID="448917126">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="3D Rotation Sound" ID="{7A871BA2-E0C2-4C00-88A4-5B69A6992143}" WorkUnitID="{A74E518F-F408-4C9B-8A1C-159B2E0D84BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_3DMultiPositionSound" ID="{FE1CC7EE-0239-4C84-AD42-B281471352A3}">
+					<ChildrenList>
+						<Action Name="" ID="{09026D13-FB95-4FF2-BDFF-84466F75DC77}" ShortID="297011192">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="3D MultiPosition Sound" ID="{05B9B6D9-E87B-4AA1-BED8-968D2CD15A87}" WorkUnitID="{A74E518F-F408-4C9B-8A1C-159B2E0D84BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_3DSplineFollowerSound" ID="{69623DAC-D98B-42E5-9B52-A4429A5DD3B9}">
+					<ChildrenList>
+						<Action Name="" ID="{8F2EC91A-C77C-484B-A93B-EF92D1E3EC55}" ShortID="370566837">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="3D Spline Follower Sound" ID="{35DB7633-265F-400E-B410-EB0FAC954B34}" WorkUnitID="{A74E518F-F408-4C9B-8A1C-159B2E0D84BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_3DSound" ID="{6FD58B50-D2D9-4630-A635-8AC4B9E76D81}">
+					<ChildrenList>
+						<Action Name="" ID="{EE3FAD28-12BA-4F2E-B7D9-B33BB5D98DC7}" ShortID="30934484">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="3D Sound" ID="{A2510E12-C885-4A79-8328-4E0C6A489415}" WorkUnitID="{A74E518F-F408-4C9B-8A1C-159B2E0D84BA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
