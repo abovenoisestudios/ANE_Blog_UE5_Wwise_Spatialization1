@@ -5,12 +5,6 @@
   "BasePlatform": "Mac",
   "Plugins": [
    {
-    "Name": "Wwise Silence",
-    "ID": "6619138",
-    "DLL": "AkSilenceGenerator",
-    "StaticLib": "AkSilenceSource"
-   },
-   {
     "Name": "System",
     "ID": "11403271"
    },

@@ -1,0 +1,49 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/2022/9. Sep/ANE_Blog_UE5_Wwise_Spatialization1/MyUE5_Wwise_Project/",
+   "SourceFilesRoot": "/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/2022/9. Sep/ANE_Blog_UE5_Wwise_Spatialization1/MyUE5_Wwise_Project/.cache/Mac/",
+   "SoundBanksRoot": "/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/2022/9. Sep/ANE_Blog_UE5_Wwise_Spatialization1/MyUE5_Wwise_Project/GeneratedSoundBanks/Mac/",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/2022/9. Sep/ANE_Blog_UE5_Wwise_Spatialization1/MyUE5_Wwise_Project/GeneratedSoundBanks/Mac"
+  },
+  "SoundBanks": [
+   {
+    "Id": "4007871309",
+    "GUID": "{EEE3434D-434D-134D-4D4D-4D4D4D4D4D4D}",
+    "Language": "SFX",
+    "Hash": "1332085576",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_666BFD6CDFAC4BCA9F1F7661C965472A",
+    "ShortName": "SB_666BFD6CDFAC4BCA9F1F7661C965472A",
+    "Path": "SB_666BFD6CDFAC4BCA9F1F7661C965472A.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "3116762376",
+      "Name": "Play_3DSound",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_3DSound",
+      "GUID": "{666BFD6C-DFAC-4BCA-9F1F-7661C965472A}",
+      "DurationType": "Infinite",
+      "ExcludedMemoryFiles": [
+       {
+        "Id": "271998892",
+        "Language": "SFX",
+        "ShortName": "sx_electricity_3dsound.wav",
+        "Path": "SFX/sx_electricity_3dsound_297774FD.wem"
+       },
+       {
+        "Id": "893321243",
+        "Language": "SFX",
+        "ShortName": "VO_3DSound.wav",
+        "Path": "SFX/VO_3DSound_10C4C929.wem"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

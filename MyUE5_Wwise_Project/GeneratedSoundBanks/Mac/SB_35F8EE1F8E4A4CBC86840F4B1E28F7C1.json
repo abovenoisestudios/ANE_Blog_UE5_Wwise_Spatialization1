@@ -1,0 +1,49 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/2022/9. Sep/ANE_Blog_UE5_Wwise_Spatialization1/MyUE5_Wwise_Project/",
+   "SourceFilesRoot": "/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/2022/9. Sep/ANE_Blog_UE5_Wwise_Spatialization1/MyUE5_Wwise_Project/.cache/Mac/",
+   "SoundBanksRoot": "/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/2022/9. Sep/ANE_Blog_UE5_Wwise_Spatialization1/MyUE5_Wwise_Project/GeneratedSoundBanks/Mac/",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/2022/9. Sep/ANE_Blog_UE5_Wwise_Spatialization1/MyUE5_Wwise_Project/GeneratedSoundBanks/Mac"
+  },
+  "SoundBanks": [
+   {
+    "Id": "3109912349",
+    "GUID": "{B95D7F1D-7F1D-1F1D-1D1D-1D1D1D1D1D1D}",
+    "Language": "SFX",
+    "Hash": "4225603564",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_35F8EE1F8E4A4CBC86840F4B1E28F7C1",
+    "ShortName": "SB_35F8EE1F8E4A4CBC86840F4B1E28F7C1",
+    "Path": "SB_35F8EE1F8E4A4CBC86840F4B1E28F7C1.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "3953763185",
+      "Name": "Play_MultiPositionSound",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_MultiPositionSound",
+      "GUID": "{35F8EE1F-8E4A-4CBC-8684-0F4B1E28F7C1}",
+      "DurationType": "Infinite",
+      "ExcludedMemoryFiles": [
+       {
+        "Id": "288458978",
+        "Language": "SFX",
+        "ShortName": "sx_scifidron_multipositionsound.wav",
+        "Path": "SFX/sx_scifidron_multipositionsound_F4092DE2.wem"
+       },
+       {
+        "Id": "1044950707",
+        "Language": "SFX",
+        "ShortName": "VO_MultiPos.wav",
+        "Path": "SFX/VO_MultiPos_10C4C929.wem"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

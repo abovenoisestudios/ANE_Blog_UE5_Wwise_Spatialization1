@@ -3,45 +3,61 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{CC0ADFF5-1E63-4CA6-BCD7-CCA2E16176C4}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_3DRotationSound" ID="{4E33824A-7C5E-4EB6-AA57-7EE620F69633}">
+				<Event Name="Play_MultiPositionSound" ID="{35F8EE1F-8E4A-4CBC-8684-0F4B1E28F7C1}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
-						<Action Name="" ID="{D9061F05-E986-4227-9D4C-95D718EEE4D4}" ShortID="448917126">
+						<Action Name="" ID="{609117A8-E461-4BE9-9CDD-D615559FFD39}" ShortID="299984133">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="3D Rotation Sound" ID="{7A871BA2-E0C2-4C00-88A4-5B69A6992143}" WorkUnitID="{A74E518F-F408-4C9B-8A1C-159B2E0D84BA}"/>
+									<ObjectRef Name="MultiPositionSound" ID="{32941F78-03BA-417C-A18D-DA59CFCC421A}" WorkUnitID="{A74E518F-F408-4C9B-8A1C-159B2E0D84BA}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_3DMultiPositionSound" ID="{FE1CC7EE-0239-4C84-AD42-B281471352A3}">
+				<Event Name="Play_ConeAttenuationSound" ID="{2F4530C7-8C83-41B2-8322-F9A03CBA5BD7}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="23"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
-						<Action Name="" ID="{09026D13-FB95-4FF2-BDFF-84466F75DC77}" ShortID="297011192">
+						<Action Name="" ID="{6AA859FA-4850-4846-937A-669046BD29DD}" ShortID="1008313753">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="3D MultiPosition Sound" ID="{05B9B6D9-E87B-4AA1-BED8-968D2CD15A87}" WorkUnitID="{A74E518F-F408-4C9B-8A1C-159B2E0D84BA}"/>
+									<ObjectRef Name="ConeAttenuationSound" ID="{3C89DA4E-11DE-4351-8F72-2DB6B7D9011A}" WorkUnitID="{A74E518F-F408-4C9B-8A1C-159B2E0D84BA}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_3DSplineFollowerSound" ID="{69623DAC-D98B-42E5-9B52-A4429A5DD3B9}">
+				<Event Name="Play_3DSound" ID="{666BFD6C-DFAC-4BCA-9F1F-7661C965472A}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="26"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
-						<Action Name="" ID="{8F2EC91A-C77C-484B-A93B-EF92D1E3EC55}" ShortID="370566837">
+						<Action Name="" ID="{8B065892-CE38-44F5-9C33-E5BDF6DD6CB2}" ShortID="28724059">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="3D Spline Follower Sound" ID="{35DB7633-265F-400E-B410-EB0FAC954B34}" WorkUnitID="{A74E518F-F408-4C9B-8A1C-159B2E0D84BA}"/>
+									<ObjectRef Name="3DSound" ID="{8BDC3087-361A-4CBE-86ED-7588D2C74249}" WorkUnitID="{A74E518F-F408-4C9B-8A1C-159B2E0D84BA}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_3DSound" ID="{6FD58B50-D2D9-4630-A635-8AC4B9E76D81}">
+				<Event Name="Play_SplineComponentSound" ID="{C514A317-FBEE-4B87-BF9D-5EEA2C349C01}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="24"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
-						<Action Name="" ID="{EE3FAD28-12BA-4F2E-B7D9-B33BB5D98DC7}" ShortID="30934484">
+						<Action Name="" ID="{F4DFF3F3-4C29-4D41-805A-64EC18DF208C}" ShortID="325268409">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="3D Sound" ID="{A2510E12-C885-4A79-8328-4E0C6A489415}" WorkUnitID="{A74E518F-F408-4C9B-8A1C-159B2E0D84BA}"/>
+									<ObjectRef Name="SplineComponentSound" ID="{70EF7C68-B405-4EC1-89C9-B14E62AEE5B7}" WorkUnitID="{A74E518F-F408-4C9B-8A1C-159B2E0D84BA}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

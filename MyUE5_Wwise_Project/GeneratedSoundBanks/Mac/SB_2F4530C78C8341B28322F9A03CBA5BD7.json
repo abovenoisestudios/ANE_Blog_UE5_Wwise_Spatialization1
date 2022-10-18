@@ -1,0 +1,49 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/2022/9. Sep/ANE_Blog_UE5_Wwise_Spatialization1/MyUE5_Wwise_Project/",
+   "SourceFilesRoot": "/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/2022/9. Sep/ANE_Blog_UE5_Wwise_Spatialization1/MyUE5_Wwise_Project/.cache/Mac/",
+   "SoundBanksRoot": "/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/2022/9. Sep/ANE_Blog_UE5_Wwise_Spatialization1/MyUE5_Wwise_Project/GeneratedSoundBanks/Mac/",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "/Users/horacio/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/z:/Volumes/Projects/6. REPOSITORIES/2022/9. Sep/ANE_Blog_UE5_Wwise_Spatialization1/MyUE5_Wwise_Project/GeneratedSoundBanks/Mac"
+  },
+  "SoundBanks": [
+   {
+    "Id": "3742875666",
+    "GUID": "{DF17C012-C012-1012-1212-121212121212}",
+    "Language": "SFX",
+    "Hash": "2385075850",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_2F4530C78C8341B28322F9A03CBA5BD7",
+    "ShortName": "SB_2F4530C78C8341B28322F9A03CBA5BD7",
+    "Path": "SB_2F4530C78C8341B28322F9A03CBA5BD7.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "1209290114",
+      "Name": "Play_ConeAttenuationSound",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_ConeAttenuationSound",
+      "GUID": "{2F4530C7-8C83-41B2-8322-F9A03CBA5BD7}",
+      "DurationType": "Infinite",
+      "ExcludedMemoryFiles": [
+       {
+        "Id": "355688490",
+        "Language": "SFX",
+        "ShortName": "VO_ConeAtt.wav",
+        "Path": "SFX/VO_ConeAtt_10C4C929.wem"
+       },
+       {
+        "Id": "1033897621",
+        "Language": "SFX",
+        "ShortName": "mx_drumloop_134bpm_coneattenuation.wav",
+        "Path": "SFX/mx_drumloop_134bpm_coneattenuation_81238AE1.wem"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

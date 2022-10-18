@@ -3,76 +3,16 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{A74E518F-F408-4C9B-8A1C-159B2E0D84BA}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="3D Sound" ID="{A2510E12-C885-4A79-8328-4E0C6A489415}" ShortID="572232078">
+				<BlendContainer Name="MultiPositionSound" ID="{32941F78-03BA-417C-A18D-DA59CFCC421A}" ShortID="1060901256">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="Soundly:ActiveChannels" Type="string" Value="[]"/>
-						<Property Name="Soundly:FileID" Type="string" Value="1652630369Hsp0TfERML"/>
-						<Property Name="Soundly:FileName" Type="string" Value="/Volumes/Samples and Libraries/3. SAMPLE LIBRARIES/Native Instruments Libraries/Battery 4 Factory Library/Samples/Loops/Loop 84 Bpm Eliot.wav"/>
-						<Property Name="Soundly:HandleStartTime" Type="string" Value="0"/>
-						<Property Name="Soundly:HandleStopTime" Type="string" Value="5.714308390022675"/>
-						<Property Name="Soundly:LibraryID" Type="string" Value="1652630275G7sshJzaWm"/>
-						<Property Name="Soundly:LibraryLocation" Type="string" Value="Local"/>
-						<Property Name="Soundly:PlaybackSpeed" Type="string" Value="1.0"/>
-						<Property Name="Soundly:ProcessList" Type="string" Value="[]"/>
-						<Property Name="Soundly:RenderedFileBitRate" Type="string" Value="3"/>
-						<Property Name="Soundly:RenderedFilePath" Type="string" Value="/Volumes/Samples and Libraries/8. TEMP/SX_Loop 84 Bpm Eliot.wav"/>
-						<Property Name="Soundly:RenderedFileSampleRate" Type="string" Value="48000"/>
-						<Property Name="Soundly:SelectionStartTime" Type="string" Value="0"/>
-						<Property Name="Soundly:SelectionStopTime" Type="string" Value="0"/>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
-							<Custom CreatedFrom="{2374357C-1052-460A-9EEE-09A549C87917}">
-								<Attenuation Name="MyAttenuationSetting (Custom)" ID="{8A2AB02A-CC30-482B-8947-CD0B7E0216A4}" ShortID="95986651">
-									<PropertyList>
-										<Property Name="RadiusMax" Type="Real64" Value="1500"/>
-									</PropertyList>
-									<CurveUsageInfoList>
-										<VolumeDryUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{1AC561A6-C0D6-4069-8EA5-8CC1DABD40AD}">
-													<PropertyList>
-														<Property Name="Flags" Type="int32" Value="3"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>0</XPos>
-															<YPos>0</YPos>
-															<Flags>5</Flags>
-															<SegmentShape>Log1</SegmentShape>
-														</Point>
-														<Point>
-															<XPos>1500</XPos>
-															<YPos>-200</YPos>
-															<Flags>37</Flags>
-														</Point>
-													</PointList>
-												</Curve>
-											</CurveUsageInfo>
-										</VolumeDryUsage>
-										<VolumeWetGameUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-										</VolumeWetGameUsage>
-										<VolumeWetUserUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-										</VolumeWetUserUsage>
-										<LowPassFilterUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</LowPassFilterUsage>
-										<HighPassFilterUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</HighPassFilterUsage>
-										<SpreadUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</SpreadUsage>
-										<FocusUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</FocusUsage>
-									</CurveUsageInfoList>
-								</Attenuation>
-							</Custom>
+							<ObjectRef Name="GeneralAttenuation" ID="{2374357C-1052-460A-9EEE-09A549C87917}" WorkUnitID="{D656016D-2ABE-4CD6-AE91-CB9F453E13EB}"/>
 						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9407C5CB-74F0-4AAC-9886-3C9C80437B6C}"/>
@@ -82,100 +22,162 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<SourcePlugin Name="Wwise Silence" ID="{E2924C8E-004D-4333-8EBD-007D6798EDB9}" ShortID="248137148" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-							<Language>SFX</Language>
-						</SourcePlugin>
+						<Sound Name="MultiPositionSound" ID="{05B9B6D9-E87B-4AA1-BED8-968D2CD15A87}" ShortID="625419262">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Soundly:ActiveChannels" Type="string" Value="[]"/>
+								<Property Name="Soundly:FileID" Type="string" Value="1652630369Hsp0TfERML"/>
+								<Property Name="Soundly:FileName" Type="string" Value="/Volumes/Samples and Libraries/3. SAMPLE LIBRARIES/Native Instruments Libraries/Battery 4 Factory Library/Samples/Loops/Loop 84 Bpm Eliot.wav"/>
+								<Property Name="Soundly:HandleStartTime" Type="string" Value="0"/>
+								<Property Name="Soundly:HandleStopTime" Type="string" Value="5.714308390022675"/>
+								<Property Name="Soundly:LibraryID" Type="string" Value="1652630275G7sshJzaWm"/>
+								<Property Name="Soundly:LibraryLocation" Type="string" Value="Local"/>
+								<Property Name="Soundly:PlaybackSpeed" Type="string" Value="1.0"/>
+								<Property Name="Soundly:ProcessList" Type="string" Value="[]"/>
+								<Property Name="Soundly:RenderedFileBitRate" Type="string" Value="3"/>
+								<Property Name="Soundly:RenderedFilePath" Type="string" Value="/Volumes/Samples and Libraries/8. TEMP/SX_Loop 84 Bpm Eliot.wav"/>
+								<Property Name="Soundly:RenderedFileSampleRate" Type="string" Value="48000"/>
+								<Property Name="Soundly:SelectionStartTime" Type="string" Value="0"/>
+								<Property Name="Soundly:SelectionStopTime" Type="string" Value="0"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom CreatedFrom="{2374357C-1052-460A-9EEE-09A549C87917}">
+										<Attenuation Name="GeneralAttenuation (Custom)" ID="{341AC7DC-2072-4D26-A547-190390FC063A}" ShortID="1005033894">
+											<PropertyList>
+												<Property Name="RadiusMax" Type="Real64" Value="1500"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{34B84C00-0FCF-4F7C-A52A-D0F11530D7EE}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																	<SegmentShape>Log1</SegmentShape>
+																</Point>
+																<Point>
+																	<XPos>1500</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9407C5CB-74F0-4AAC-9886-3C9C80437B6C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{072A2C21-46EA-40ED-96D4-B6549FAD0998}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sx_scifidron_multipositionsound" ID="{36B936E8-F95C-4B50-9736-7FA0F9AC49BC}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="569.128"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.519163065843621"/>
+										<Property Name="LoopEnd" Type="Real64" Value="9.72636111111111"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>sx_scifidron_multipositionsound.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="288458978"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sx_scifidron_multipositionsound" ID="{36B936E8-F95C-4B50-9736-7FA0F9AC49BC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="VO_MultiPos" ID="{E2966985-94A5-4F8C-ABD9-29B152FB4206}" ShortID="35001630">
+							<PropertyList>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9407C5CB-74F0-4AAC-9886-3C9C80437B6C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{072A2C21-46EA-40ED-96D4-B6549FAD0998}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="VO_MultiPos" ID="{849966F2-CAE5-47CA-991E-1D3EDFB62D00}">
+									<Language>SFX</Language>
+									<AudioFile>VO_MultiPos.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1044950707"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{C1C0BD18-88EF-4BF4-9716-0069E1D81C12}"/>
+							</PositioningInfo>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="VO_MultiPos" ID="{849966F2-CAE5-47CA-991E-1D3EDFB62D00}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="Wwise Silence" ID="{E2924C8E-004D-4333-8EBD-007D6798EDB9}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="3D Rotation Sound" ID="{7A871BA2-E0C2-4C00-88A4-5B69A6992143}" ShortID="597611753">
+				</BlendContainer>
+				<BlendContainer Name="ConeAttenuationSound" ID="{3C89DA4E-11DE-4351-8F72-2DB6B7D9011A}" ShortID="311571774">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="Soundly:ActiveChannels" Type="string" Value="[]"/>
-						<Property Name="Soundly:FileID" Type="string" Value="1652630369Hsp0TfERML"/>
-						<Property Name="Soundly:FileName" Type="string" Value="/Volumes/Samples and Libraries/3. SAMPLE LIBRARIES/Native Instruments Libraries/Battery 4 Factory Library/Samples/Loops/Loop 84 Bpm Eliot.wav"/>
-						<Property Name="Soundly:HandleStartTime" Type="string" Value="0"/>
-						<Property Name="Soundly:HandleStopTime" Type="string" Value="5.714308390022675"/>
-						<Property Name="Soundly:LibraryID" Type="string" Value="1652630275G7sshJzaWm"/>
-						<Property Name="Soundly:LibraryLocation" Type="string" Value="Local"/>
-						<Property Name="Soundly:PlaybackSpeed" Type="string" Value="1.0"/>
-						<Property Name="Soundly:ProcessList" Type="string" Value="[]"/>
-						<Property Name="Soundly:RenderedFileBitRate" Type="string" Value="3"/>
-						<Property Name="Soundly:RenderedFilePath" Type="string" Value="/Volumes/Samples and Libraries/8. TEMP/SX_Loop 84 Bpm Eliot.wav"/>
-						<Property Name="Soundly:RenderedFileSampleRate" Type="string" Value="48000"/>
-						<Property Name="Soundly:SelectionStartTime" Type="string" Value="0"/>
-						<Property Name="Soundly:SelectionStopTime" Type="string" Value="0"/>
+						<Property Name="Color" Type="int16" Value="23"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
-							<Custom CreatedFrom="{DDF440A7-EEED-4226-92E0-AB47957254BA}">
-								<Attenuation Name="RotatingAttenuation (Custom)" ID="{5D63F298-6E95-4F22-9B8A-4C4118DD5396}" ShortID="1048343278">
-									<PropertyList>
-										<Property Name="ConeAttenuation" Type="Real64">
-											<ValueList>
-												<Value>-10</Value>
-											</ValueList>
-										</Property>
-										<Property Name="ConeLowPassFilterValue" Type="int32">
-											<ValueList>
-												<Value>60</Value>
-											</ValueList>
-										</Property>
-										<Property Name="ConeUse" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="RadiusMax" Type="Real64" Value="1500"/>
-									</PropertyList>
-									<CurveUsageInfoList>
-										<VolumeDryUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{3017C7C5-6DA1-4F0D-9E8F-0CDC4E6A4CAD}">
-													<PropertyList>
-														<Property Name="Flags" Type="int32" Value="3"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>0</XPos>
-															<YPos>0</YPos>
-															<Flags>5</Flags>
-															<SegmentShape>Log1</SegmentShape>
-														</Point>
-														<Point>
-															<XPos>1500</XPos>
-															<YPos>-200</YPos>
-															<Flags>37</Flags>
-														</Point>
-													</PointList>
-												</Curve>
-											</CurveUsageInfo>
-										</VolumeDryUsage>
-										<VolumeWetGameUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-										</VolumeWetGameUsage>
-										<VolumeWetUserUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-										</VolumeWetUserUsage>
-										<LowPassFilterUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</LowPassFilterUsage>
-										<HighPassFilterUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</HighPassFilterUsage>
-										<SpreadUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</SpreadUsage>
-										<FocusUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</FocusUsage>
-									</CurveUsageInfoList>
-								</Attenuation>
-							</Custom>
+							<ObjectRef Name="RotatingAttenuation" ID="{DDF440A7-EEED-4226-92E0-AB47957254BA}" WorkUnitID="{D656016D-2ABE-4CD6-AE91-CB9F453E13EB}"/>
 						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9407C5CB-74F0-4AAC-9886-3C9C80437B6C}"/>
@@ -185,91 +187,166 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<SourcePlugin Name="Wwise Silence" ID="{A0422E6D-6703-4E1D-9159-DB162431FF2D}" ShortID="945108260" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-							<Language>SFX</Language>
-						</SourcePlugin>
+						<Sound Name="ConeAttenuationSound" ID="{7A871BA2-E0C2-4C00-88A4-5B69A6992143}" ShortID="597611753">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Soundly:ActiveChannels" Type="string" Value="[]"/>
+								<Property Name="Soundly:FileID" Type="string" Value="1652630369Hsp0TfERML"/>
+								<Property Name="Soundly:FileName" Type="string" Value="/Volumes/Samples and Libraries/3. SAMPLE LIBRARIES/Native Instruments Libraries/Battery 4 Factory Library/Samples/Loops/Loop 84 Bpm Eliot.wav"/>
+								<Property Name="Soundly:HandleStartTime" Type="string" Value="0"/>
+								<Property Name="Soundly:HandleStopTime" Type="string" Value="5.714308390022675"/>
+								<Property Name="Soundly:LibraryID" Type="string" Value="1652630275G7sshJzaWm"/>
+								<Property Name="Soundly:LibraryLocation" Type="string" Value="Local"/>
+								<Property Name="Soundly:PlaybackSpeed" Type="string" Value="1.0"/>
+								<Property Name="Soundly:ProcessList" Type="string" Value="[]"/>
+								<Property Name="Soundly:RenderedFileBitRate" Type="string" Value="3"/>
+								<Property Name="Soundly:RenderedFilePath" Type="string" Value="/Volumes/Samples and Libraries/8. TEMP/SX_Loop 84 Bpm Eliot.wav"/>
+								<Property Name="Soundly:RenderedFileSampleRate" Type="string" Value="48000"/>
+								<Property Name="Soundly:SelectionStartTime" Type="string" Value="0"/>
+								<Property Name="Soundly:SelectionStopTime" Type="string" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom CreatedFrom="{DDF440A7-EEED-4226-92E0-AB47957254BA}">
+										<Attenuation Name="RotatingAttenuation (Custom)" ID="{5D63F298-6E95-4F22-9B8A-4C4118DD5396}" ShortID="1048343278">
+											<PropertyList>
+												<Property Name="ConeAttenuation" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+												<Property Name="ConeLowPassFilterValue" Type="int32">
+													<ValueList>
+														<Value>60</Value>
+													</ValueList>
+												</Property>
+												<Property Name="ConeUse" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="RadiusMax" Type="Real64" Value="1500"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{3017C7C5-6DA1-4F0D-9E8F-0CDC4E6A4CAD}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																	<SegmentShape>Log1</SegmentShape>
+																</Point>
+																<Point>
+																	<XPos>1500</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9407C5CB-74F0-4AAC-9886-3C9C80437B6C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{072A2C21-46EA-40ED-96D4-B6549FAD0998}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="mx_drumloop_134bpm_coneattenuation" ID="{6D8C1484-BB24-4C05-9AA1-DA9586FC1935}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="0"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>mx_drumloop_134bpm_coneattenuation.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1033897621"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="mx_drumloop_134bpm_coneattenuation" ID="{6D8C1484-BB24-4C05-9AA1-DA9586FC1935}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="VO_ConeAtt" ID="{3D9C33C6-CA6C-456F-8B8E-4B56351F9D1F}" ShortID="694921279">
+							<PropertyList>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9407C5CB-74F0-4AAC-9886-3C9C80437B6C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{072A2C21-46EA-40ED-96D4-B6549FAD0998}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="VO_ConeAtt" ID="{646A2E4F-08A1-4DAA-BC02-B70286837736}">
+									<Language>SFX</Language>
+									<AudioFile>VO_ConeAtt.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="355688490"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="VO_ConeAtt" ID="{646A2E4F-08A1-4DAA-BC02-B70286837736}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="Wwise Silence" ID="{A0422E6D-6703-4E1D-9159-DB162431FF2D}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="3D MultiPosition Sound" ID="{05B9B6D9-E87B-4AA1-BED8-968D2CD15A87}" ShortID="625419262">
+				</BlendContainer>
+				<BlendContainer Name="3DSound" ID="{8BDC3087-361A-4CBE-86ED-7588D2C74249}" ShortID="328959682">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="MakeUpGain" Type="Real64">
-							<ValueList>
-								<Value>8</Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:ActiveChannels" Type="string" Value="[]"/>
-						<Property Name="Soundly:FileID" Type="string" Value="1652630369Hsp0TfERML"/>
-						<Property Name="Soundly:FileName" Type="string" Value="/Volumes/Samples and Libraries/3. SAMPLE LIBRARIES/Native Instruments Libraries/Battery 4 Factory Library/Samples/Loops/Loop 84 Bpm Eliot.wav"/>
-						<Property Name="Soundly:HandleStartTime" Type="string" Value="0"/>
-						<Property Name="Soundly:HandleStopTime" Type="string" Value="5.714308390022675"/>
-						<Property Name="Soundly:LibraryID" Type="string" Value="1652630275G7sshJzaWm"/>
-						<Property Name="Soundly:LibraryLocation" Type="string" Value="Local"/>
-						<Property Name="Soundly:PlaybackSpeed" Type="string" Value="1.0"/>
-						<Property Name="Soundly:ProcessList" Type="string" Value="[]"/>
-						<Property Name="Soundly:RenderedFileBitRate" Type="string" Value="3"/>
-						<Property Name="Soundly:RenderedFilePath" Type="string" Value="/Volumes/Samples and Libraries/8. TEMP/SX_Loop 84 Bpm Eliot.wav"/>
-						<Property Name="Soundly:RenderedFileSampleRate" Type="string" Value="48000"/>
-						<Property Name="Soundly:SelectionStartTime" Type="string" Value="0"/>
-						<Property Name="Soundly:SelectionStopTime" Type="string" Value="0"/>
-						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+						<Property Name="Color" Type="int16" Value="26"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
-							<Custom CreatedFrom="{2374357C-1052-460A-9EEE-09A549C87917}">
-								<Attenuation Name="GeneralAttenuation (Custom)" ID="{341AC7DC-2072-4D26-A547-190390FC063A}" ShortID="1005033894">
-									<PropertyList>
-										<Property Name="RadiusMax" Type="Real64" Value="1500"/>
-									</PropertyList>
-									<CurveUsageInfoList>
-										<VolumeDryUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{34B84C00-0FCF-4F7C-A52A-D0F11530D7EE}">
-													<PropertyList>
-														<Property Name="Flags" Type="int32" Value="3"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>0</XPos>
-															<YPos>0</YPos>
-															<Flags>5</Flags>
-															<SegmentShape>Log1</SegmentShape>
-														</Point>
-														<Point>
-															<XPos>1500</XPos>
-															<YPos>-200</YPos>
-															<Flags>37</Flags>
-														</Point>
-													</PointList>
-												</Curve>
-											</CurveUsageInfo>
-										</VolumeDryUsage>
-										<VolumeWetGameUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-										</VolumeWetGameUsage>
-										<VolumeWetUserUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-										</VolumeWetUserUsage>
-										<LowPassFilterUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</LowPassFilterUsage>
-										<HighPassFilterUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</HighPassFilterUsage>
-										<SpreadUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</SpreadUsage>
-										<FocusUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</FocusUsage>
-									</CurveUsageInfoList>
-								</Attenuation>
-							</Custom>
+							<ObjectRef Name="GeneralAttenuation" ID="{2374357C-1052-460A-9EEE-09A549C87917}" WorkUnitID="{D656016D-2ABE-4CD6-AE91-CB9F453E13EB}"/>
 						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9407C5CB-74F0-4AAC-9886-3C9C80437B6C}"/>
@@ -279,34 +356,151 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<SourcePlugin Name="Wwise Silence" ID="{E32E819E-76A9-471E-B47B-FD23B08CF3B1}" ShortID="484340021" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-							<Language>SFX</Language>
-						</SourcePlugin>
+						<Sound Name="3DSound" ID="{A2510E12-C885-4A79-8328-4E0C6A489415}" ShortID="572232078">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Soundly:ActiveChannels" Type="string" Value="[]"/>
+								<Property Name="Soundly:FileID" Type="string" Value="1652630369Hsp0TfERML"/>
+								<Property Name="Soundly:FileName" Type="string" Value="/Volumes/Samples and Libraries/3. SAMPLE LIBRARIES/Native Instruments Libraries/Battery 4 Factory Library/Samples/Loops/Loop 84 Bpm Eliot.wav"/>
+								<Property Name="Soundly:HandleStartTime" Type="string" Value="0"/>
+								<Property Name="Soundly:HandleStopTime" Type="string" Value="5.714308390022675"/>
+								<Property Name="Soundly:LibraryID" Type="string" Value="1652630275G7sshJzaWm"/>
+								<Property Name="Soundly:LibraryLocation" Type="string" Value="Local"/>
+								<Property Name="Soundly:PlaybackSpeed" Type="string" Value="1.0"/>
+								<Property Name="Soundly:ProcessList" Type="string" Value="[]"/>
+								<Property Name="Soundly:RenderedFileBitRate" Type="string" Value="3"/>
+								<Property Name="Soundly:RenderedFilePath" Type="string" Value="/Volumes/Samples and Libraries/8. TEMP/SX_Loop 84 Bpm Eliot.wav"/>
+								<Property Name="Soundly:RenderedFileSampleRate" Type="string" Value="48000"/>
+								<Property Name="Soundly:SelectionStartTime" Type="string" Value="0"/>
+								<Property Name="Soundly:SelectionStopTime" Type="string" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom CreatedFrom="{2374357C-1052-460A-9EEE-09A549C87917}">
+										<Attenuation Name="MyAttenuationSetting (Custom)" ID="{8A2AB02A-CC30-482B-8947-CD0B7E0216A4}" ShortID="95986651">
+											<PropertyList>
+												<Property Name="RadiusMax" Type="Real64" Value="1500"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{1AC561A6-C0D6-4069-8EA5-8CC1DABD40AD}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																	<SegmentShape>Log1</SegmentShape>
+																</Point>
+																<Point>
+																	<XPos>1500</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9407C5CB-74F0-4AAC-9886-3C9C80437B6C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{072A2C21-46EA-40ED-96D4-B6549FAD0998}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sx_electricity_3dsound" ID="{033233B9-79CB-4E0D-AADC-427A3F98B868}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="315.789"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.401234567901235"/>
+										<Property Name="LoopEnd" Type="Real64" Value="8.62139917695473"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="8.86831275720164"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>sx_electricity_3dsound.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="271998892"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sx_electricity_3dsound" ID="{033233B9-79CB-4E0D-AADC-427A3F98B868}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="VO_3DSound" ID="{66F95044-B675-4D35-9824-EAFC1E653E21}" ShortID="350908943">
+							<PropertyList>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9407C5CB-74F0-4AAC-9886-3C9C80437B6C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{072A2C21-46EA-40ED-96D4-B6549FAD0998}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="VO_3DSound" ID="{DB41192A-64A4-4E13-8469-96C6B04BD584}">
+									<Language>SFX</Language>
+									<AudioFile>VO_3DSound.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="893321243"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="VO_3DSound" ID="{DB41192A-64A4-4E13-8469-96C6B04BD584}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="Wwise Silence" ID="{E32E819E-76A9-471E-B47B-FD23B08CF3B1}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="3D Spline Follower Sound" ID="{35DB7633-265F-400E-B410-EB0FAC954B34}" ShortID="774381474">
+				</BlendContainer>
+				<BlendContainer Name="SplineComponentSound" ID="{70EF7C68-B405-4EC1-89C9-B14E62AEE5B7}" ShortID="359797211">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="Soundly:ActiveChannels" Type="string" Value="[]"/>
-						<Property Name="Soundly:FileID" Type="string" Value="1652630369Hsp0TfERML"/>
-						<Property Name="Soundly:FileName" Type="string" Value="/Volumes/Samples and Libraries/3. SAMPLE LIBRARIES/Native Instruments Libraries/Battery 4 Factory Library/Samples/Loops/Loop 84 Bpm Eliot.wav"/>
-						<Property Name="Soundly:HandleStartTime" Type="string" Value="0"/>
-						<Property Name="Soundly:HandleStopTime" Type="string" Value="5.714308390022675"/>
-						<Property Name="Soundly:LibraryID" Type="string" Value="1652630275G7sshJzaWm"/>
-						<Property Name="Soundly:LibraryLocation" Type="string" Value="Local"/>
-						<Property Name="Soundly:PlaybackSpeed" Type="string" Value="1.0"/>
-						<Property Name="Soundly:ProcessList" Type="string" Value="[]"/>
-						<Property Name="Soundly:RenderedFileBitRate" Type="string" Value="3"/>
-						<Property Name="Soundly:RenderedFilePath" Type="string" Value="/Volumes/Samples and Libraries/8. TEMP/SX_Loop 84 Bpm Eliot.wav"/>
-						<Property Name="Soundly:RenderedFileSampleRate" Type="string" Value="48000"/>
-						<Property Name="Soundly:SelectionStartTime" Type="string" Value="0"/>
-						<Property Name="Soundly:SelectionStopTime" Type="string" Value="0"/>
-						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="40"/>
+						<Property Name="Color" Type="int16" Value="24"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -320,15 +514,97 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<SourcePlugin Name="Wwise Silence" ID="{C38D826E-E153-41CA-B735-81D925B629B5}" ShortID="509418194" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-							<Language>SFX</Language>
-						</SourcePlugin>
+						<Sound Name="SplineComponentSound" ID="{35DB7633-265F-400E-B410-EB0FAC954B34}" ShortID="774381474">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Soundly:ActiveChannels" Type="string" Value="[]"/>
+								<Property Name="Soundly:FileID" Type="string" Value="1652630369Hsp0TfERML"/>
+								<Property Name="Soundly:FileName" Type="string" Value="/Volumes/Samples and Libraries/3. SAMPLE LIBRARIES/Native Instruments Libraries/Battery 4 Factory Library/Samples/Loops/Loop 84 Bpm Eliot.wav"/>
+								<Property Name="Soundly:HandleStartTime" Type="string" Value="0"/>
+								<Property Name="Soundly:HandleStopTime" Type="string" Value="5.714308390022675"/>
+								<Property Name="Soundly:LibraryID" Type="string" Value="1652630275G7sshJzaWm"/>
+								<Property Name="Soundly:LibraryLocation" Type="string" Value="Local"/>
+								<Property Name="Soundly:PlaybackSpeed" Type="string" Value="1.0"/>
+								<Property Name="Soundly:ProcessList" Type="string" Value="[]"/>
+								<Property Name="Soundly:RenderedFileBitRate" Type="string" Value="3"/>
+								<Property Name="Soundly:RenderedFilePath" Type="string" Value="/Volumes/Samples and Libraries/8. TEMP/SX_Loop 84 Bpm Eliot.wav"/>
+								<Property Name="Soundly:RenderedFileSampleRate" Type="string" Value="48000"/>
+								<Property Name="Soundly:SelectionStartTime" Type="string" Value="0"/>
+								<Property Name="Soundly:SelectionStopTime" Type="string" Value="0"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="40"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="SplineAttenuation" ID="{8879AD75-5369-40CB-9E12-ADF6AA14FF19}" WorkUnitID="{D656016D-2ABE-4CD6-AE91-CB9F453E13EB}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9407C5CB-74F0-4AAC-9886-3C9C80437B6C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{072A2C21-46EA-40ED-96D4-B6549FAD0998}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sx_seaambiance_splinecomponent" ID="{BEB9CDF0-6637-4B8F-9DFB-398D02F04E77}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="447.368"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.37037037037037"/>
+										<Property Name="LoopEnd" Type="Real64" Value="9.23868312757202"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>sx_seaambiance_splinecomponent.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="798336133"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sx_seaambiance_splinecomponent" ID="{BEB9CDF0-6637-4B8F-9DFB-398D02F04E77}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="VO_SplineComp" ID="{E7505195-2C36-4010-BE85-B5B4CE92166A}" ShortID="977878223">
+							<PropertyList>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9407C5CB-74F0-4AAC-9886-3C9C80437B6C}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{072A2C21-46EA-40ED-96D4-B6549FAD0998}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="VO_SplineComp" ID="{C1A7DD1E-C8F9-472C-8C84-7356B52F4CF7}">
+									<Language>SFX</Language>
+									<AudioFile>VO_SplineComp.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="890464468"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="VO_SplineComp" ID="{C1A7DD1E-C8F9-472C-8C84-7356B52F4CF7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="Wwise Silence" ID="{C38D826E-E153-41CA-B735-81D925B629B5}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
