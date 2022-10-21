@@ -1,4 +1,4 @@
-# Footsteps System in Unreal Engine 5 and Wwise
+# Spatialization #1 in Unreal Engine 5 and Wwise
 ### Game Audio Blog - Above Noise Studios
 English: [https://abovenoisestudios.com/blogeng/wwiseue5spatialization1eng](https://abovenoisestudios.com/blogeng/wwiseue5spatialization1eng)\
 Spanish: [https://abovenoisestudios.com/blogespanol/wwiseue5spatialization1esp](https://abovenoisestudios.com/blogespanol/wwiseue5spatialization1esp)\
@@ -83,12 +83,12 @@ Disfruta!
 
 ## Viewport
 
-<img height="969" src="Images/Viewport_UnrealEngine_Wwise_Spatialization1.png" title="Viewport" width="1478"/>
+![](Images/Viewport_UnrealEngine_Wwise_Spatialization1.png "Viewport")
 
 ## C++ Implementation
 
-<img height="827" src="Images/FullCppFile2_UnrealEngine_Wwise_Spatialization1.png" title=".cpp File" width="1707"/>
+![](Images/FullCppFile2_UnrealEngine_Wwise_Spatialization1.png "Cpp Implementation")
 
 ## Blueprint Implementation
 
-<img height="899" src="Images/SetFiveAudioPositions_UnrealEngine_Wwise_Spatialization1.png" title="Blueprint" width="1465"/>
+![](Images/SetFiveAudioPositions_UnrealEngine_Wwise_Spatialization1.png "Blueprints")

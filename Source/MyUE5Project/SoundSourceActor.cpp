@@ -2,7 +2,6 @@
 
 #include "SoundSourceActor.h"
 
-
 #include "GameFramework/Character.h" // Include this directive to access ACharacter functions.
 #include "AkGameplayStatics.h" // Include this directive to access Wwise functions.
 #include "Kismet/GameplayStatics.h" // Include this directive to access the GetPlayerCharacter() function.

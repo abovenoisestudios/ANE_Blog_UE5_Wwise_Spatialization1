@@ -28,7 +28,7 @@
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="MakeUpGain" Type="Real64">
 									<ValueList>
-										<Value>-8</Value>
+										<Value>-12</Value>
 									</ValueList>
 								</Property>
 								<Property Name="Soundly:ActiveChannels" Type="string" Value="[]"/>
@@ -136,7 +136,7 @@
 								</Property>
 								<Property Name="MakeUpGain" Type="Real64">
 									<ValueList>
-										<Value>-14</Value>
+										<Value>-10</Value>
 									</ValueList>
 								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -311,6 +311,11 @@
 										<Value>2</Value>
 									</ValueList>
 								</Property>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -468,6 +473,11 @@
 										<Value>2</Value>
 									</ValueList>
 								</Property>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -500,7 +510,7 @@
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="Color" Type="int16" Value="24"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
-						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="65"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -518,11 +528,6 @@
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="MakeUpGain" Type="Real64">
-									<ValueList>
-										<Value>2</Value>
-									</ValueList>
-								</Property>
 								<Property Name="Soundly:ActiveChannels" Type="string" Value="[]"/>
 								<Property Name="Soundly:FileID" Type="string" Value="1652630369Hsp0TfERML"/>
 								<Property Name="Soundly:FileName" Type="string" Value="/Volumes/Samples and Libraries/3. SAMPLE LIBRARIES/Native Instruments Libraries/Battery 4 Factory Library/Samples/Loops/Loop 84 Bpm Eliot.wav"/>
@@ -576,6 +581,11 @@
 								<Property Name="InitialDelay" Type="Real64">
 									<ValueList>
 										<Value>2</Value>
+									</ValueList>
+								</Property>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
 									</ValueList>
 								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
